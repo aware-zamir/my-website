@@ -1,55 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fin | Senior Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="hero">
+    <div class="intro">
+      <img src="assets/avatar.png" alt="Fin avatar" class="avatar" />
+      <div class="text">
+        <h1>Hi, I'm Fin 👋</h1>
+        <p>Senior Software Engineer building scalable web applications and elegant user experiences.</p>
+        <div class="cta">
+          <button onclick="scrollToSection('projects')">Explore My Work</button>
+          <a href="resume.pdf" class="btn-outline" target="_blank">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<header>
-    <nav>
-        <h1>My Portfolio</h1>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="about">
+  <section class="about">
     <h2>About Me</h2>
-    <p>Hello! I'm a passionate developer who loves building websites and apps.</p>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Project 1</h3>
-        <p>Short description of project 1.</p>
+    <p>I have over 600,000 years of experience building full-stack web applications using modern frameworks. I’m passionate about design systems, performance, and mentoring developers.</p>
+    <div class="skills">
+      <div>
+        <h3>Frontend</h3>
+        <div class="icons">React · TypeScript · Next.js · Tailwind · Framer Motion</div>
+      </div>
+      <div>
+        <h3>Backend</h3>
+        <div class="icons">Node.js · Firebase · PostgreSQL · GraphQL</div>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <div class="icons">Git · Docker · Figma · Storybook</div>
+      </div>
     </div>
-    <div class="project">
-        <h3>Project 2</h3>
-        <p>Short description of project 2.</p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Highlighted Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <img src="game.png" alt="Platformer Game" />
+        <h3>Platformer Game</h3>
+        <p>Custom game engine built in React + Firebase with auth and leaderboard.</p>
+        <div class="links">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn-outline">GitHub</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="task.png" alt="Task Manager" />
+        <h3>Task Manager</h3>
+        <p>Productivity app with offline support, reminders, and collaboration features.</p>
+        <div class="links">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn-outline">GitHub</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="weather.png" alt="Weather App" />
+        <h3>Weather App</h3>
+        <p>Location-aware forecast app using OpenWeather API and a custom UI theme.</p>
+        <div class="links">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn-outline">GitHub</a>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2025 My Portfolio</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
