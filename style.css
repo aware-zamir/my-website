@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primary-color: #64ffda;
-  --secondary-color: #43e97b;
+  --primary-color: #3b82f6;
+  --secondary-color: #60a5fa;
   --dark-bg: #18181b;
   --darker-bg: #0f0f12;
   --card-bg: #23272f;
@@ -36,12 +36,12 @@ body {
 
 /* Header / Hero */
 .hero {
-  background: linear-gradient(90deg, #0f2027 0%, #2c5364 100%);
+  background: linear-gradient(90deg, #0f2027 0%, #1e40af 100%);
   padding: clamp(3rem, 5vw, 6rem) clamp(1rem, 3vw, 2rem);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 40vh;
   position: relative;
   overflow: hidden;
 }
@@ -123,7 +123,7 @@ button,
 
 button:hover,
 .btn:hover {
-  background: linear-gradient(90deg, var(--secondary-color) 0%, #38f9d7 100%);
+  background: linear-gradient(90deg, var(--secondary-color) 0%, #2563eb 100%);
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 4px 24px color-mix(in srgb, var(--primary-color) 25%, transparent);
 }
@@ -282,7 +282,7 @@ section h2::after {
   }
   
   .hero {
-    background: linear-gradient(90deg, #e0f7fa 0%, #b2ebf2 100%);
+    background: linear-gradient(90deg, #e0f7fa 0%, #93c5fd 100%);
   }
   
   .intro {
